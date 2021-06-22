@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+$main-color:#11111A;
+$secondary-color:#cc0000;
+$tertiary-color:#fff;
+$font-title-main:"Catamaran";
+$font-title-alt:"Josefin Sans";
+$font-basic:"Lato";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: $main-color;
+    color: $tertiary-color;
+    font-family: $font-basic, sans-serif;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.btn {
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem .5rem;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.btn:hover {
+    filter: brightness(85%);
+}

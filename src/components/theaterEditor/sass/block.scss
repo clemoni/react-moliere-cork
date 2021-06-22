@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$base-color:#f3f3f3;
+$darker-base-color:darken(#f3f3f3, 20%);
+
+@mixin border-frame {
+    border: 1px solid $darker-base-color;
+    border-radius: 5px
+}
+
+;
+
+.theater-editor {
+    width: 80vw;
+    min-height: 50vh;
+    background-color: $base-color;
+    margin: 0 auto;
+    padding: 5px;
+    @include border-frame();
+    -webkit-box-shadow: 9px 10px 13px -1px rgba(0, 0, 0, 0.45);
+    box-shadow: 9px 10px 13px -1px rgba(0, 0, 0, 0.45);
+}
+
+
+.DraftEditor-root {
+    min-height: inherit;
+    width: 100%;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #fff;
+    @include border-frame()
+}
+
+.DraftEditor-editorContainer,
+.public-DraftEditor-content {
+    min-height: inherit;
+    width: 100%;
+}
+
+
+.buttons__menue {
+    width: 100%;
+    background-color: $base-color;
+    padding: 5px 0;
+
+}
+
+
+// Buttins styling
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.btn-icon {
+    position: relative;
+
+    &__btn {
+        border: none;
+        background-color: #f3f3f3;
+        padding: 0 1rem;
+        border-right: 1px solid #000;
+    }
+
+
+
+    &__tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 105%;
+    }
+
+    :hover .btn-icon__tooltiptext {
+        visibility: visible;
+    }
+
+}
+
+.svg-inline--fa {
+    color: #242323;
+    font-size: 1rem;
+
+}
+
+
+
+// TEXT SYTLING
+.descriptionBlock,
+.titleBlock,
+.dialogueBlock {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    padding: .5rem;
+    font-size: 1rem;
+
+}
+
+.titleBlock {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+
+}
+
+.descriptionBlock {
+    text-align: justify;
+    font-style: italic;
+    font-weight: 300;
+    background-color: #f8c9c3;
+    margin: 5px 0
+}
+
+.dialogueBlock {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #c3d1f8;
+    line-height: 2;
+    margin: 5px 0
+}
